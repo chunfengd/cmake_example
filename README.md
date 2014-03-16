@@ -1,7 +1,6 @@
 cmake_example
 =============
-
-#cmake project examples
+cmake project examples
 
 ##t1
 
