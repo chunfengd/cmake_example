@@ -1,9 +1,9 @@
 
-PROJECT(HELLO)
+project(HELLO)
 
-MESSAGE(STATUS "This is BINARY dir " ${HELLO_BINARY_DIR})
-MESSAGE(STATUS "This is SOURCE dir " ${HELLO_SOURCE_DIR})
+message(STATUS "This is BINARY dir " ${HELLO_BINARY_DIR})
+message(STATUS "This is SOURCE dir " ${HELLO_SOURCE_DIR})
 
-SET(SRC_LIST main.cpp)
+set(SRC_LIST main.cpp)
 
-ADD_EXECUTABLE(hello ${SRC_LIST})
+add_executable(hello ${SRC_LIST})

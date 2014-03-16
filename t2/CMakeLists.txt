@@ -1,10 +1,12 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+cmake_minimum_required(VERSION 2.8)
 
-PROJECT(HELLO)
+project(HELLO)
 
-MESSAGE(STATUS "This is BINARY dir " ${HELLO_BINARY_DIR})
-MESSAGE(STATUS "This is SOURCE dir " ${HELLO_SOURCE_DIR})
+message(STATUS "This is BINARY dir " ${PROJECT_BINARY_DIR})
+message(STATUS "This is SOURCE dir " ${PROJECT_SOURCE_DIR})
 
-ADD_SUBDIRECTORY(src bin)
+add_subdirectory(src)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
-ADD_EXECUTABLE(hello ${SRC_LIST})
+add_executable(hello ${SRC_LIST})
