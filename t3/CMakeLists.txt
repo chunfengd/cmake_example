@@ -7,11 +7,7 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
 add_library(hello_share SHARED ${SRC_LIST})
-if (APPLE)
-  set_target_properties(hello_share PROPERTIES PREFIX "lib")
-  set_target_properties(hello_share PROPERTIES OUTPUT_NAME "hello.so")
-  set_target_properties(hello_share PROPERTIES SUFFIX "")
-endif()
+set_target_properties(hello_share PROPERTIES OUTPUT_NAME "hello")
 set_target_properties(hello_share PROPERTIES CLEAN_DIRECT_OUTPUT 1)
 set_target_properties(hello_share PROPERTIES
   VERSION 1.2 SOVERSION 1)
