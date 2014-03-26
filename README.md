@@ -8,8 +8,12 @@ Simple example, only includes main.cpp cmakelists.txt.
 
 ##t2
 
-A little more complex project, contains subdirs.
+A little more complex example, contains subdirs.
 
 ##t3
 
-A project for building static & shared libs.
+Building static & shared libraries.
+
+##t4
+
+Link static or shared libraries.
