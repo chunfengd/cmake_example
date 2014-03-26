@@ -1,0 +1,15 @@
+* t4
+** environment for cmake path
+*** environment
+- CMAKE_INCLUDE_PATH
+- CMAKE_LIBRARY_PATH
+*** eg
+#+BEGIN_SRC sh
+  CMAKE_INCLUDE_PATH=/home/include cmake ..
+#+END_SRC
+** run shared linked app on Mac
+#+BEGIN_SRC sh
+  DYLD_LIBRARY_PATH=$HOME/dev/cmake/cmake_example/t3/build/install/lib ./main
+#+END_SRC
+** static link on Mac
+Need full path of the static library.
