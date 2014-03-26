@@ -16,6 +16,4 @@ target_link_libraries(main
   ${hello_install_dir}/lib/libhello.a)
 
 # # share
-# # run this:
-# #   DYLD_LIBRARY_PATH=$HOME/dev/cmake/cmake_example/t3/build/install/lib ./main
 # target_link_libraries(main hello)
